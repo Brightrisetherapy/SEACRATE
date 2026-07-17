@@ -1,0 +1,24 @@
+# ─────────────────────────────────────────────────────────────
+#  ReaperCrate | config.yml
+#  Main plugin configuration.
+# ─────────────────────────────────────────────────────────────
+
+# Enable verbose debug logging to console.
+debug: false
+
+settings:
+
+  # Send the resource pack to players when they join.
+  # Requires resource-pack-url to be set below.
+  use-resource-pack: false
+
+  # Direct download URL for the resource pack.
+  # Must be a publicly reachable HTTP/HTTPS link.
+  resource-pack-url: ''
+
+  # SHA-1 hash of the resource pack zip (40 hex characters).
+  # Leave empty to skip hash verification.
+  resource-pack-hash: ''
+
+  # Reserved for future automatic item-list update checks.
+  auto-update: true

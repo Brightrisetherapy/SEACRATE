@@ -1,0 +1,24 @@
+name: ReaperCrate
+version: '${project.version}'
+main: me.seasmp.reapercrate.ReaperCrate
+api-version: '1.21'
+description: Standalone item provider for the Soul Reaper resource pack.
+authors:
+  - SeaSmp
+website: https://github.com/SeaSmp/ReaperCrate
+
+commands:
+  reapercrate:
+    description: ReaperCrate main command.
+    aliases:
+      - rc
+    usage: /rc <help|give|list|info|reload>
+    permission: reapercrate.admin
+
+permissions:
+  reapercrate.admin:
+    description: Access to all ReaperCrate commands.
+    default: op
+  reapercrate.use:
+    description: Allows the player to use ReaperCrate items.
+    default: true

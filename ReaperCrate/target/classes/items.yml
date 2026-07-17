@@ -1,0 +1,157 @@
+# ─────────────────────────────────────────────────────────────
+#  ReaperCrate | items.yml
+#
+#  Define every custom item here.
+#  Items are loaded on startup and can be reloaded with /rc reload.
+#
+#  ── YAML Schema ──────────────────────────────────────────────
+#
+#  items:
+#    <id>:                            # Unique item ID (lowercase, no spaces)
+#      material: <MATERIAL>           # Bukkit Material name
+#      custom-model-data: <int>       # Resource-pack model override integer
+#      display-name: "<MiniMessage>"  # Item display name (MiniMessage)
+#      lore:                          # Item lore (MiniMessage, one line per entry)
+#        - "<line 1>"
+#        - ""                         # Blank line = Component.empty()
+#      amount: <int>                  # Stack size (default 1)
+#      unbreakable: <true|false>      # Prevent durability loss
+#      flags:                         # Hide vanilla tooltip sections
+#        - HIDE_ATTRIBUTES
+#        - HIDE_ENCHANTS
+#        - HIDE_UNBREAKABLE
+#        - HIDE_ITEM_SPECIFICS
+#        - HIDE_DYE
+#        - HIDE_ARMOR_TRIM
+#      enchants:                      # Enchantment ID (minecraft key): level
+#        sharpness: 5
+#        fire_aspect: 2
+#      attributes:                    # Attribute modifiers
+#        attack_damage: 20.0          # Supported keys listed below
+#        attack_speed: 1.6
+#      leather-color: "#4B0082"       # Hex dye colour (leather armour only)
+#      potion-type: STRONG_HEALING    # PotionType name (potions only)
+#      potion-color: "#800080"        # Hex colour override (potions only)
+#      trim:                          # Armour trim (armour only)
+#        pattern: HOST                # TrimPattern key (minecraft namespace)
+#        material: GOLD               # TrimMaterial key (minecraft namespace)
+#      food:                          # Food component
+#        nutrition: 4
+#        saturation: 0.3
+#        can-always-eat: false
+#
+#  ── Supported Attributes ─────────────────────────────────────
+#  max_health, follow_range, knockback_resistance, movement_speed,
+#  flying_speed, attack_damage, attack_knockback, attack_speed,
+#  armor, armor_toughness, luck, max_absorption, scale,
+#  step_height, gravity, safe_fall_distance, fall_damage_multiplier,
+#  jump_strength, block_break_speed, block_interaction_range,
+#  entity_interaction_range, mining_efficiency, sneaking_speed,
+#  submerged_mining_speed, sweeping_damage_ratio,
+#  zombie_spawn_reinforcements
+# ─────────────────────────────────────────────────────────────
+
+items:
+
+  soul_sword:
+    material: NETHERITE_SWORD
+    custom-model-data: 40001
+    display-name: "<gradient:#800000:#ff0000>Soul Sword</gradient>"
+    lore:
+      - "<gray>A legendary weapon forged in the depths"
+      - "<gray>of the Soul Realm."
+      - ""
+      - "<dark_gray>✦ <red>Reaper Crate <dark_gray>✦"
+    unbreakable: true
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+    enchants:
+      sharpness: 10
+      fire_aspect: 2
+    attributes:
+      attack_damage: 25.0
+      attack_speed: 1.6
+
+  soul_scythe:
+    material: DIAMOND_HOE
+    custom-model-data: 40002
+    display-name: "<gradient:#4B0082:#9400D3>Soul Scythe</gradient>"
+    lore:
+      - "<gray>Harvests the souls of the fallen."
+      - ""
+      - "<dark_gray>✦ <red>Reaper Crate <dark_gray>✦"
+    unbreakable: true
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+    enchants:
+      sharpness: 8
+      looting: 3
+    attributes:
+      attack_damage: 18.0
+      attack_speed: 1.4
+
+  soul_helmet:
+    material: NETHERITE_HELMET
+    custom-model-data: 40010
+    display-name: "<gradient:#800000:#ff0000>Soul Helmet</gradient>"
+    lore:
+      - "<gray>Protects the bearer's soul."
+      - ""
+      - "<dark_gray>✦ <red>Reaper Crate <dark_gray>✦"
+    unbreakable: true
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+    attributes:
+      armor: 3.0
+      armor_toughness: 3.0
+
+  soul_chestplate:
+    material: NETHERITE_CHESTPLATE
+    custom-model-data: 40011
+    display-name: "<gradient:#800000:#ff0000>Soul Chestplate</gradient>"
+    lore:
+      - "<gray>Forged from condensed soul essence."
+      - ""
+      - "<dark_gray>✦ <red>Reaper Crate <dark_gray>✦"
+    unbreakable: true
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+    attributes:
+      armor: 8.0
+      armor_toughness: 3.0
+
+  soul_leggings:
+    material: NETHERITE_LEGGINGS
+    custom-model-data: 40012
+    display-name: "<gradient:#800000:#ff0000>Soul Leggings</gradient>"
+    lore:
+      - "<gray>Swift as the shadows they came from."
+      - ""
+      - "<dark_gray>✦ <red>Reaper Crate <dark_gray>✦"
+    unbreakable: true
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+    attributes:
+      armor: 6.0
+      armor_toughness: 3.0
+
+  soul_boots:
+    material: NETHERITE_BOOTS
+    custom-model-data: 40013
+    display-name: "<gradient:#800000:#ff0000>Soul Boots</gradient>"
+    lore:
+      - "<gray>Silent steps in the realm of the dead."
+      - ""
+      - "<dark_gray>✦ <red>Reaper Crate <dark_gray>✦"
+    unbreakable: true
+    flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+    attributes:
+      armor: 3.0
+      armor_toughness: 3.0

@@ -1,0 +1,47 @@
+# ─────────────────────────────────────────────────────────────
+#  ReaperCrate | messages.yml
+#  All user-facing messages. Uses MiniMessage formatting.
+#  https://docs.advntr.dev/minimessage/format.html
+# ─────────────────────────────────────────────────────────────
+
+# Prefix prepended to every message sent by the plugin.
+prefix: "<dark_red>[<red>ReaperCrate<dark_red>]<reset> "
+
+# ── General ──────────────────────────────────────────────────
+no-permission: "<red>You do not have permission to use this command."
+player-only: "<red>This command can only be run by a player."
+unknown-command: "<red>Unknown subcommand. Use <yellow>/rc help<red> for a list of commands."
+
+# ── Reload ───────────────────────────────────────────────────
+reload-success: "<green>ReaperCrate has been reloaded successfully."
+reload-fail: "<red>Reload failed. Check the console for errors."
+
+# ── Give ─────────────────────────────────────────────────────
+give-usage: "<red>Usage: <yellow>/rc give <player> <item>"
+give-unknown-player: "<red>Player <yellow>{player}<red> was not found or is offline."
+give-unknown-item: "<red>Item <yellow>{item}<red> does not exist. Use <yellow>/rc list<red> to see all items."
+give-success-sender: "<green>Gave <yellow>{item}<green> to <yellow>{player}<green>."
+give-success-receiver: "<green>You received <yellow>{item}<green>."
+
+# ── List ─────────────────────────────────────────────────────
+list-header: "<dark_red>─── <red>ReaperCrate Items <dark_red>───"
+list-entry: " <yellow>▪ <white>{item}"
+list-footer: "<dark_red>───────────────────────────"
+list-empty: "<yellow>No items are currently loaded."
+
+# ── Info ─────────────────────────────────────────────────────
+info-header: "<dark_red>─── <red>Item: <yellow>{item} <dark_red>───"
+info-material: " <gray>Material: <white>{value}"
+info-model-data: " <gray>Custom Model Data: <white>{value}"
+info-display-name: " <gray>Display Name: {value}"
+info-enchants: " <gray>Enchantments: <white>{value}"
+info-flags: " <gray>Flags: <white>{value}"
+info-footer: "<dark_red>─────────────────────────────"
+
+# ── Help ─────────────────────────────────────────────────────
+help-header: "<dark_red>═══ <red>ReaperCrate <dark_red>═══"
+help-give: " <yellow>/rc give <player> <item> <gray>- Give an item to a player."
+help-list: " <yellow>/rc list <gray>- List all loaded items."
+help-info: " <yellow>/rc info <item> <gray>- View item details."
+help-reload: " <yellow>/rc reload <gray>- Reload configuration and items."
+help-footer: "<dark_red>═══════════════════════════"
